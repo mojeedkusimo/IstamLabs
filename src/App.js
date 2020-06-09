@@ -3,12 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 import RegForm from "./regForm"
 import Header from "./Header"
+import Footer from "./Footer"
 
 function App() {
   return (
     <div className="App">
       <Header />
      <RegForm />
+     <Footer />
     </div>
   );
 }

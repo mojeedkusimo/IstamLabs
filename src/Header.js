@@ -1,8 +1,9 @@
 import React from"react"
-
+import App from "./App"
+import './App.css'
 function Header (){
     return(
-        <header>
+        <header className= "App-header">
             <h1> Welcome to IstemLabs.</h1>
             </header>
     )
