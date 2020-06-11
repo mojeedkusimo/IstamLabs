@@ -1,10 +1,13 @@
-import React from "react"
+import React from "react";
+import QRCode from 'qrcode';
+import './bootstrap.min.css';
+import './qrcode.js';
 
 class RegForm extends React.Component {
     constructor(props){
         super()
         this.state ={
-            ParentName: "",
+            parentName: "",
             phoneNo: "",
             studentName: "",
             studentAge: "",
@@ -14,10 +17,16 @@ class RegForm extends React.Component {
     }
     mySubmitHandler = (event) => {
         event.preventDefault();
-        let age = this.state.studentAge;
-        if (!Number(age)) {
-          alert("Student age must be a number");
-        }
+        let str = `This is ${this.state.studentName} with Guardian ${this.state.parentName} whose phone number is ${this.state.phoneNo}`;
+
+        QRCode.toCanvas(document.getElementById('canvas'), str, function (error) {
+            if(error) {
+                console.log(error);
+            }
+            else {
+                console.log('success!');
+            }
+        })
       }
       myChangeHandler = (event) => {
         let nam = event.target.name;
@@ -26,16 +35,16 @@ class RegForm extends React.Component {
       }
     render(){
         return(
-             <form onSubmit={this.mySubmitHandler}>
+<form onSubmit={this.mySubmitHandler}>
            <p>Enter Parent/Guaidian Name:</p>
       <input
         type="text"
-        name="name"
+        name="parentName"
         onChange={this.myChangeHandler}
       />
       <p>Phone Number:</p>
       <input
-        type='text'
+        type='number'
         name='phoneNo'
         onChange={this.myChangeHandler}
       />
@@ -43,13 +52,13 @@ class RegForm extends React.Component {
       <p>Enter student name:</p>
       <input
         type='text'
-        name='studentNme'
+        name='studentName'
         onChange={this.myChangeHandler}
       />
 
       <p>Enter student age:</p> 
       <input
-        type='text'
+        type='number'
         name='age'
         onChange={this.myChangeHandler}
       />
@@ -66,8 +75,8 @@ class RegForm extends React.Component {
       <br/>
       <br/>
       <input type='submit' />
-      </form>
-
+      <canvas id='canvas' className='text-center'/>
+       </form>
         )
     }
 
