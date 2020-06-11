@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/IstamLabs/static/css/main.ecf8538a.chunk.css",
+    "main.js": "/IstamLabs/static/js/main.b2a82146.chunk.js",
+    "main.js.map": "/IstamLabs/static/js/main.b2a82146.chunk.js.map",
+    "runtime-main.js": "/IstamLabs/static/js/runtime-main.33a7a769.js",
+    "runtime-main.js.map": "/IstamLabs/static/js/runtime-main.33a7a769.js.map",
+    "static/js/2.0e9ef8d9.chunk.js": "/IstamLabs/static/js/2.0e9ef8d9.chunk.js",
+    "static/js/2.0e9ef8d9.chunk.js.map": "/IstamLabs/static/js/2.0e9ef8d9.chunk.js.map",
+    "index.html": "/IstamLabs/index.html",
+    "precache-manifest.ead94e946c417cc86d4bfaa153bfd414.js": "/IstamLabs/precache-manifest.ead94e946c417cc86d4bfaa153bfd414.js",
+    "service-worker.js": "/IstamLabs/service-worker.js",
+    "static/css/main.ecf8538a.chunk.css.map": "/IstamLabs/static/css/main.ecf8538a.chunk.css.map",
+    "static/js/2.0e9ef8d9.chunk.js.LICENSE.txt": "/IstamLabs/static/js/2.0e9ef8d9.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/IstamLabs/static/media/logo.ee7cd8ed.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.33a7a769.js",
+    "static/js/2.0e9ef8d9.chunk.js",
+    "static/css/main.ecf8538a.chunk.css",
+    "static/js/main.b2a82146.chunk.js"
+  ]
+}
