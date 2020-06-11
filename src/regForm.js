@@ -1,5 +1,6 @@
 import React from "react"
 
+
 class RegForm extends React.Component {
     constructor(props){
         super()
@@ -24,6 +25,10 @@ class RegForm extends React.Component {
         let val = event.target.value;
         this.setState({[nam]: val});
       }
+
+     
+
+
     render(){
         return(
              <form onSubmit={this.mySubmitHandler}>
@@ -65,7 +70,9 @@ class RegForm extends React.Component {
       
       <br/>
       <br/>
-      <input type='submit' />
+      <input 
+      type='submit' />
+      
       </form>
 
         )
