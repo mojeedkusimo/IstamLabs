@@ -1,6 +1,37 @@
 .App {
   text-align: center;
-  background-color: moccasin;
+  /* background-color: moccasin; */
+  background-color: white;
+}
+
+.istemlabs {
+  color: #606062;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+#canvas {
+  display: none;
+}
+
+.africa {
+
+  font-size: 50px;
+}
+
+input[type=text], input[type=number] {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgb(214, 207, 207)
+
+}
+
+.button {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .App-logo {
