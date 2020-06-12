@@ -11,10 +11,9 @@ function App() {
     <div className="App">
       <Header />
      <RegForm />
-     {/* <QR /> */}
      <Footer />
     </div>
-  );
+  )
 }
 
 export default App;

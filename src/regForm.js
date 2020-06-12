@@ -3,6 +3,7 @@ import QRCode from 'qrcode';
 import './bootstrap.min.css';
 import './qrcode.js';
 
+
 class RegForm extends React.Component {
     constructor(props){
         super()
@@ -33,6 +34,10 @@ class RegForm extends React.Component {
         let val = event.target.value;
         this.setState({[nam]: val});
       }
+
+     
+
+
     render(){
         return(
 <form onSubmit={this.mySubmitHandler}>
