@@ -4,13 +4,14 @@ import './App.css';
 import RegForm from "./regForm"
 import Header from "./Header"
 import Footer from "./Footer";
-// import QR from './qrcode';
+// import DownloadQR from "./downloadQrCode";
 
 function App() {
   return (
     <div className="App">
       {/* <Header /> */}
      <RegForm />
+     {/* <DownloadQR /> */}
      {/* <Footer /> */}
     </div>
   )

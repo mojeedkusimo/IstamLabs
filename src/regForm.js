@@ -1,5 +1,6 @@
 import React from "react";
-import QRCode from 'qrcode';
+// import QRCode from 'qrcode';
+import QRCode from 'qrcode.react';
 import './bootstrap.min.css';
 
 class RegForm extends React.Component {
@@ -17,17 +18,18 @@ class RegForm extends React.Component {
     
     mySubmitHandler = (event) => {
         event.preventDefault();
-        document.getElementById('canvas').style.display = 'inline-block';
-        let str = `This is ${this.state.studentName} with Guardian ${this.state.parentName} whose phone number is ${this.state.phoneNo}`;
+        document.getElementById('canvas-div').style.display = 'inline-block';
 
-        QRCode.toCanvas(document.getElementById('canvas'), str, function (error) {
-            if(error) {
-                console.log(error);
-            }
-            else {
-                console.log('success!');
-            }
-        })
+        // let str = `This is ${this.state.studentName} with Guardian ${this.state.parentName} whose phone number is ${this.state.phoneNo}`;
+
+        // QRCode.toCanvas(document.getElementById('canvas'), str, function (error) {
+        //     if(error) {
+        //         console.log(error);
+        //     }
+        //     else {
+        //         console.log('success!');
+        //     }
+        // })
 
       }
       myChangeHandler = (event) => {
@@ -36,6 +38,18 @@ class RegForm extends React.Component {
         this.setState({[nam]: val});
       }
 
+      downloadQRcode = () => { 
+        const canvas = document.getElementById("canvas");
+        const pngUrl = canvas
+          .toDataURL("image/png")
+          .replace("image/png", "image/octet-stream");
+        let downloadLink = document.createElement("a");
+        downloadLink.href = pngUrl;
+        downloadLink.download = "qrcode.png";
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+    }
      
     render(){
 
@@ -70,7 +84,16 @@ class RegForm extends React.Component {
                     <div className='text-right '>
                       <button type="submit" class="btn btn-danger my-2 h1 p-2 button inline-block"><span className='button'>Submit</span></button>
                     </div>
-                    <canvas id='canvas' className='text-center'/>
+                    <div id='canvas-div'>
+                        <QRCode
+                          id="canvas"
+                          value={`This is ${this.state.studentName} with Guardian ${this.state.parentName} whose phone number is ${this.state.phoneNo}`}
+                          size={290}
+                          level={"H"}
+                          includeMargin={true}
+                        />
+                      <button className='btn btn-danger' onClick={this.downloadQRcode}> Download QR </button>
+                    </div>
                   </form>
                 </div>
                 <div className='col-4'></div>
