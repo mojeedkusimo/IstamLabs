@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/IstamLabs/static/css/main.b7cbe2fe.chunk.css",
-    "main.js": "/IstamLabs/static/js/main.98951336.chunk.js",
-    "main.js.map": "/IstamLabs/static/js/main.98951336.chunk.js.map",
+    "main.js": "/IstamLabs/static/js/main.64022f56.chunk.js",
+    "main.js.map": "/IstamLabs/static/js/main.64022f56.chunk.js.map",
     "runtime-main.js": "/IstamLabs/static/js/runtime-main.33a7a769.js",
     "runtime-main.js.map": "/IstamLabs/static/js/runtime-main.33a7a769.js.map",
-    "static/js/2.4a13e1fd.chunk.js": "/IstamLabs/static/js/2.4a13e1fd.chunk.js",
-    "static/js/2.4a13e1fd.chunk.js.map": "/IstamLabs/static/js/2.4a13e1fd.chunk.js.map",
+    "static/js/2.1c987e13.chunk.js": "/IstamLabs/static/js/2.1c987e13.chunk.js",
+    "static/js/2.1c987e13.chunk.js.map": "/IstamLabs/static/js/2.1c987e13.chunk.js.map",
     "index.html": "/IstamLabs/index.html",
-    "precache-manifest.feef092589d58c6c1c7201a6bb95b7c9.js": "/IstamLabs/precache-manifest.feef092589d58c6c1c7201a6bb95b7c9.js",
+    "precache-manifest.728ff984f37adcd38710a2c2e03d8d00.js": "/IstamLabs/precache-manifest.728ff984f37adcd38710a2c2e03d8d00.js",
     "service-worker.js": "/IstamLabs/service-worker.js",
     "static/css/main.b7cbe2fe.chunk.css.map": "/IstamLabs/static/css/main.b7cbe2fe.chunk.css.map",
-    "static/js/2.4a13e1fd.chunk.js.LICENSE.txt": "/IstamLabs/static/js/2.4a13e1fd.chunk.js.LICENSE.txt"
+    "static/js/2.1c987e13.chunk.js.LICENSE.txt": "/IstamLabs/static/js/2.1c987e13.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.33a7a769.js",
-    "static/js/2.4a13e1fd.chunk.js",
+    "static/js/2.1c987e13.chunk.js",
     "static/css/main.b7cbe2fe.chunk.css",
-    "static/js/main.98951336.chunk.js"
+    "static/js/main.64022f56.chunk.js"
   ]
 }
