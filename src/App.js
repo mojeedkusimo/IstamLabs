@@ -1,18 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import RegForm from "./regForm"
-import Header from "./Header"
-import Footer from "./Footer";
-// import DownloadQR from "./downloadQrCode";
+import Attendance from "./components/Attendance"
+import Home from "./components/Home"
+import Register from "./components/Register"
+import Navbar from "./components/Navbar"
+import { BrowserRouter, Route } from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
-     <RegForm />
-     {/* <DownloadQR /> */}
-     {/* <Footer /> */}
+      <BrowserRouter>
+        <Navbar/>
+        <Route path="/" exact component={Home}/>
+        <Route path="/attendance" component={Attendance}/>
+        <Route path="/register" component={Register}/>
+      </BrowserRouter>
     </div>
   )
 }

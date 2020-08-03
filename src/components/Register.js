@@ -1,9 +1,8 @@
 import React from "react";
 // import QRCode from 'qrcode';
 import QRCode from 'qrcode.react';
-import './bootstrap.min.css';
 
-class RegForm extends React.Component {
+class Register extends React.Component {
     constructor(props){
         super()
         this.state ={
@@ -55,7 +54,7 @@ class RegForm extends React.Component {
 
         return(
           <div>
-            <h1 className='logo mt-5'><span className='istemlabs'>iStemLabs.</span><span className='text-danger africa'><i>Africa</i></span></h1>
+            <h1 className='logo mt-5'><span className='istemlabs'>XY.</span><span className='text-danger africa'><i>Z</i></span></h1>
             <div className='container-fluid' onSubmit={this.mySubmitHandler}>
               <div className='row'>
                 <div className='col-4'></div>
@@ -104,4 +103,4 @@ class RegForm extends React.Component {
     }
 
 }
-export default RegForm
+export default Register
