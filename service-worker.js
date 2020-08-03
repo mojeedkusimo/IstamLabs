@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/IstamLabs/precache-manifest.4077a90652d855628e42fb8dac30079b.js"
+  "/IstamLabs/precache-manifest.feef092589d58c6c1c7201a6bb95b7c9.js"
 );
 
 self.addEventListener('message', (event) => {
